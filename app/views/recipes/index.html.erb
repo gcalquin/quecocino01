@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Recipes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id recipe</th>
+      <th>Id user</th>
+      <th>Id category</th>
+      <th>Name recipe</th>
+      <th>Calories recipe</th>
+      <th>Time recipe</th>
+      <th>Preparation recipe</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @recipes.each do |recipe| %>
+      <tr>
+        <td><%= recipe.id_recipe %></td>
+        <td><%= recipe.id_user %></td>
+        <td><%= recipe.id_category %></td>
+        <td><%= recipe.name_recipe %></td>
+        <td><%= recipe.calories_recipe %></td>
+        <td><%= recipe.time_recipe %></td>
+        <td><%= recipe.preparation_recipe %></td>
+        <td><%= link_to 'Show', recipe %></td>
+        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Recipe', new_recipe_path %>

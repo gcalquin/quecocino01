@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_ingredient: 1
+  name_ingredient: MyString
+  measure_ingredient: MyString
+
+two:
+  id_ingredient: 1
+  name_ingredient: MyString
+  measure_ingredient: MyString

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_statics: 1
+  id_menu: 1
+  count_menu: 1
+  score_menu: 1
+
+two:
+  id_statics: 1
+  id_menu: 1
+  count_menu: 1
+  score_menu: 1

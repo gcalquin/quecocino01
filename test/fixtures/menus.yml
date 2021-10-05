@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_menu: 1
+  id_recipe: 1
+  quantity_menu_integer: MyString
+
+two:
+  id_menu: 1
+  id_recipe: 1
+  quantity_menu_integer: MyString

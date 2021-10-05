@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ingredient pauntry:</strong>
+  <%= @pantry.ingredient_pauntry %>
+</p>
+
+<p>
+  <strong>Quantity pauntry:</strong>
+  <%= @pantry.quantity_pauntry %>
+</p>
+
+<%= link_to 'Edit', edit_pantry_path(@pantry) %> |
+<%= link_to 'Back', pantries_path %>

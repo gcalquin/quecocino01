@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id ingredient:</strong>
+  <%= @ingredient.id_ingredient %>
+</p>
+
+<p>
+  <strong>Name ingredient:</strong>
+  <%= @ingredient.name_ingredient %>
+</p>
+
+<p>
+  <strong>Measure ingredient:</strong>
+  <%= @ingredient.measure_ingredient %>
+</p>
+
+<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
+<%= link_to 'Back', ingredients_path %>

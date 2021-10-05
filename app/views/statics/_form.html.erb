@@ -1,0 +1,37 @@
+<%= form_with(model: static, local: true) do |form| %>
+  <% if static.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(static.errors.count, "error") %> prohibited this static from being saved:</h2>
+
+      <ul>
+      <% static.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_statics %>
+    <%= form.number_field :id_statics %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_menu %>
+    <%= form.number_field :id_menu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :count_menu %>
+    <%= form.number_field :count_menu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score_menu %>
+    <%= form.number_field :score_menu %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
